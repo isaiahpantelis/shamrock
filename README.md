@@ -10,13 +10,13 @@ import numpy as np
 def f(x):
     return np.exp(-0.01 * x * x) * np.cos(x)
 ```
-It describes an exponentially decaying cosine and its graph is shown in ![some text](pics/mexhat_y_plot.png)
+It describes an exponentially decaying cosine and its graph looks like this
 
+![](pics/mexhat_y_plot.png)
 
-and you need to find it's roots, minimima, and maxima. Using the `shamrock` python package, this task can be accomplised as follows:
+Suppose, further, that one of the tasks in hand is to find the roots, minimima, and maxima of `f`. Using the `shamrock` python package, this task can be accomplised as follows:
 
-1. Specify the interval of interest:
-    
+1. Specify the interval of interest: 
 ```python
 a = -5.0 * np.pi
 b = 5.0 * np.pi
@@ -31,3 +31,12 @@ import shamrock as sh
 def f(x):
     return np.exp(-0.01 * x * x) * np.cos(x)
 ```
+
+3. Find the roots:
+```python
+roots = f.solve()
+```
+
+Here are the roots superimposed on the graph of `f`:
+
+![](![](pics/mexhat_y_and_roots_plot.png))

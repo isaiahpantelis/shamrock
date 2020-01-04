@@ -31,6 +31,17 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.grid()
 plt.legend()
+
+# -- ROOT FINDING
+roots = f.solve()
+
+plt.figure()
+plt.plot(x, y, label='y')
+plt.plot(roots, np.zeros((len(roots),)), marker='.', linewidth=0.0, label='roots')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid()
+plt.legend()
 plt.show()
 
 # # # -- DIFFERENTIATION
@@ -41,15 +52,7 @@ plt.show()
 # # dy3 = f.eval(x, diff_order=3)
 # # dy4 = f.eval(x, diff_order=4)
 # # # # pprint(f.dcoeffs)
-#
-# # -- ROOT FINDING
-# roots = f.solve()
-# # print(f'roots = {roots}')
-# # droots = f.solve(diff_order=1)
-# # print(f'droots = {droots}')
-# # ddroots = f.solve(diff_order=2)
-# # # print(f'ddroots = {ddroots}')
-#
+
 # # -- OPTIMA
 # critical, minima, maxima = f.optimise()
 #
