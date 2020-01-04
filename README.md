@@ -39,4 +39,4 @@ roots = f.solve()
 
 Here are the roots superimposed on the graph of `f`:
 
-![](![](pics/mexhat_y_and_roots_plot.png))
+![](pics/mexhat_y_and_roots_plot.png)
