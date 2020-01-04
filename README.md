@@ -68,4 +68,4 @@ plt.show()
 
 results in the following plot:
 
-![](img/mexhat_y_and_roots_and_local_optima_plot.png)
+![](img/mexhat_y_and_roots_and_optima_plot.png)
