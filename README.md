@@ -12,7 +12,9 @@ def f(x):
 ```
 It describes an exponentially decaying cosine and its graph looks like this
 
-![](img/mexhat_y_plot.png){:height="50%" width="50%"}
+<img src="https://github.com/isaiahpantelis/shamrock/blob/master/img/mexhat_y_plot.png" width="50%">
+
+![](img/mexhat_y_plot.png)
 
 Suppose, further, that one of the tasks in hand is to find the roots, minimima, and maxima of `f`. Using the `shamrock` python package, this task can be accomplised as follows:
 
